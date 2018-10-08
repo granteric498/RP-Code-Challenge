@@ -1,0 +1,12 @@
+#container {
+    /* Add border, center text,
+    and give form some space. */
+    text-align: center;
+    border-style: solid;
+    padding: 1%;
+    margin: 1%;
+}
+
+body {
+    text-align: center;
+}

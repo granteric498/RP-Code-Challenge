@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Mapping Robot</title>
 </head>
+
 <body>
+    <div id="container">
+        Date of Trip: <input type="date" id="date" value="2018-01-01"><br>
+        Name of Destination: <input id="destination"><br>
+        Action(s) Taken:
+        <select id="lOrR">
+            <option></option>
+            <option value="L" id="l">L</option>
+            <option value="R" id="r">R</option>
+        </select>
+        <div id="actionsDiv">
+            <input type="number" id="actions"><br>
+        </div>
+        <button id="moreActions">Add More Actions!</button>
+        <input type="submit" value="Submit" id="submit">
+    </div>
+
     <h1>Check the console to see the magic!</h1>
 
+    <!-- Link to jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Link to the JavaScript file -->
     <script src="logic.js"></script>
 </body>
+
 </html>
